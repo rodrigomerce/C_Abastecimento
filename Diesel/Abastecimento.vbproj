@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A56BEF6F-B2B9-4E1C-8F28-467E518BE91E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Abastecimento.My.MyApplication</StartupObject>
+    <RootNamespace>Abastecimento</RootNamespace>
+    <AssemblyName>Abastecimento</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>11.2.0.1</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Abastecimento.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Abastecimento.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ProgressSuccess.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A162883E2DE60E880ADF689D1440D8794C79FEDB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Telefone_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Apagar.Designer.vb">
+      <DependentUpon>Apagar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Apagar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="configuracao_sistema.Designer.vb">
+      <DependentUpon>configuracao_sistema.vb</DependentUpon>
+    </Compile>
+    <Compile Include="configuracao_sistema.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Correção.Designer.vb">
+      <DependentUpon>Correção.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Correção.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exportar.Designer.vb">
+      <DependentUpon>Exportar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Exportar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Importar.Designer.vb">
+      <DependentUpon>Importar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Importar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medias.Designer.vb">
+      <DependentUpon>Medias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Medias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mapa.Designer.vb">
+      <DependentUpon>Mapa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mapa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kmdlAcesso.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="onibus.Designer.vb">
+      <DependentUpon>onibus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="onibus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios.Designer.vb">
+      <DependentUpon>Relatorios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio_hodometro.Designer.vb">
+      <DependentUpon>Relatorio_hodometro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio_hodometro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio_prefeitura.Designer.vb">
+      <DependentUpon>Relatorio_prefeitura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio_prefeitura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatório de Ponto.Designer.vb">
+      <DependentUpon>Relatório de Ponto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatório de Ponto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rel_Bomba.Designer.vb">
+      <DependentUpon>Rel_Bomba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rel_Bomba.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rel_catraca.Designer.vb">
+      <DependentUpon>Rel_catraca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rel_catraca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verificacao.Designer.vb">
+      <DependentUpon>verificacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="verificacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Apagar.resx">
+      <DependentUpon>Apagar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="configuracao_sistema.resx">
+      <DependentUpon>configuracao_sistema.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Correção.resx">
+      <DependentUpon>Correção.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exportar.resx">
+      <DependentUpon>Exportar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Importar.resx">
+      <DependentUpon>Importar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medias.resx">
+      <DependentUpon>Medias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mapa.resx">
+      <DependentUpon>Mapa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="onibus.resx">
+      <DependentUpon>onibus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios.resx">
+      <DependentUpon>Relatorios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio_hodometro.resx">
+      <DependentUpon>Relatorio_hodometro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio_prefeitura.resx">
+      <DependentUpon>Relatorio_prefeitura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatório de Ponto.resx">
+      <DependentUpon>Relatório de Ponto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rel_Bomba.resx">
+      <DependentUpon>Rel_Bomba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rel_catraca.resx">
+      <DependentUpon>Rel_catraca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verificacao.resx">
+      <DependentUpon>verificacao.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Telefone_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Windows\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSFlexGridLib">
+      <Guid>{5E9E78A0-531B-11CF-91F6-C2863C385E30}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="netfol.ico" />
+    <Content Include="ProgressSuccess.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
