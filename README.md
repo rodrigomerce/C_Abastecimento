@@ -21,7 +21,7 @@
   <img alt="dev.finances" src=".github/jobscalc.png" width="100%">
 </p>
 
-## 🚀 Tecnologias
+##  Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -30,7 +30,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Sistema desenvolvido afim de gerênciar os abastecimentos da frota de  da antiga empresa de transporte urbano da cidade de Guarujá SP BR 💰
+Sistema desenvolvido afim de gerênciar os abastecimentos da frota de  da antiga empresa de transporte urbano da cidade de Guarujá SP BR 
 
 
 ## :memo: Licença
